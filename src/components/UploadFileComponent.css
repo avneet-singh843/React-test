@@ -1,0 +1,47 @@
+.dropBox {
+    width: 100%;
+    margin: 0 auto;
+    border: 2px dashed #8a8a8a;
+    border-radius: 5px;
+}
+
+.uploadHide {
+    width: 81%;
+    height: 60vh;
+    z-index: -1;
+    position: absolute;
+    font-size: 1.5rem;
+    color: #8a8a8a;
+}
+
+input::file-selector-button {
+    display: none;
+}
+
+.uploadLabel {
+    /* position: absolute; */
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chooseFiles {
+    width: 15%;
+    height: 10%;
+    background-color: #EAEAEA;
+    border: 2px solid #6D6D6D;
+    color: #6D6D6D;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.dragText {
+    font-size: 1.4rem;
+    font-weight: bold;
+}

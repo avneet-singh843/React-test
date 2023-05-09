@@ -3,7 +3,7 @@
     flex-direction: row;
 }
 
-.mainContent {
-    flex: 70%;
+.content .mainContent {
+    flex: 60%;
     padding: 2rem;
 }
