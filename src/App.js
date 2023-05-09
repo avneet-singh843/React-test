@@ -8,9 +8,6 @@ import MontagesPage from "./pages/MontagesPage";
 import CreditsPage from "./pages/CreditsPage";
 
 // importing components
-import SideBarComponent from "./components/SideBarComponent";
-import HeaderComponent from "./components/HeaderComponent";
-import FooterComponent from "./components/FooterComponent";
 
 function App() {
   return (

@@ -1,8 +1,15 @@
+import "./FooterComponent.css"
 const FooterComponent = () => {
     return (
-        <>
-            <h1>Footer</h1>
-        </>
+        <div className="footer">
+            <div className="left">
+                <button className="back">Back</button>
+                <button className="cancel">Cancel Montage</button>
+            </div>
+            <div className="right">
+                <button className="next">Next</button>
+            </div>
+        </div>
     );
 }
 export default FooterComponent;

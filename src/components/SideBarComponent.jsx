@@ -10,7 +10,7 @@ const SideBarComponent = () => {
                     return (
                         <li
                             key={key}
-                            id={window.location.pathname == val.link ? "active" : ""}
+                            id={window.location.pathname === val.link ? "active" : ""}
                             className="row"
                             onClick={() => {
                                 window.location.pathname = val.link;

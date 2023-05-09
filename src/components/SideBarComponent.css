@@ -53,6 +53,7 @@
     background-color: rgba(44, 169, 227, .25);
     border-left: 10px solid #2CA9E3;
     width: 18.1rem;
+    transition: 0.3s;
 }
 
 .row #icon {
