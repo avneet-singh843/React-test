@@ -1,0 +1,9 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainContent {
+    flex: 70%;
+    padding: 2rem;
+}
