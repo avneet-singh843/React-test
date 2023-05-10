@@ -5,7 +5,7 @@ const HeaderComponent = () => {
         <>
             <div className="navbar">
                 <div>Test_Study</div>
-                <div className="User"><AccountCircleIcon style={{ width: "40px", height: "40px", transform: "translateY(10px)" }} /> Avneet Singh</div>
+                <div className="User"><AccountCircleIcon style={{ transform: "translateY(5px)" }} /> Avneet Singh</div>
             </div>
         </>
     );

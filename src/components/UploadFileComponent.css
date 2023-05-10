@@ -11,10 +11,11 @@
 .uploadHide {
     width: 81%;
     height: 60vh;
-    z-index: -1;
+    z-index: 5;
     position: absolute;
     font-size: 1.5rem;
-    color: #8a8a8a;
+    color: #6D6D6D;
+    padding: 1rem;
 }
 
 input::file-selector-button {
@@ -35,7 +36,7 @@ input::file-selector-button {
 
 
 .chooseFiles {
-    width: 18%;
+    width: 12rem;
     height: 10%;
     background-color: #EAEAEA;
     border: 2px solid #6D6D6D;

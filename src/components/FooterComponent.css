@@ -11,17 +11,18 @@
     background-color: #fff;
     padding: 0.6rem;
     border-radius: 8px;
+    align-items: center;
 }
 
 .back {
     background-color: #fff;
     border: 2px solid #959595;
     color: #959595;
-    padding: 1.1rem 5rem;
+    padding: 0.8rem 3rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.2rem;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -30,11 +31,11 @@
     background-color: #fff;
     border: none;
     color: #959595;
-    padding: 1.1rem;
+    padding: 0.8rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-left: 1.5rem;
     cursor: pointer;
 }
@@ -44,10 +45,10 @@
     border: none;
     border-radius: 8px;
     color: white;
-    padding: 1.1rem 5rem;
+    padding: 0.8rem 3rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }

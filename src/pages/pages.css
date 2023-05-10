@@ -3,7 +3,14 @@
     flex-direction: row;
 }
 
+.content .sidebarContent {
+    flex: 25%;
+}
+
 .content .mainContent {
-    flex: 60%;
-    padding: 2rem;
+    flex: 75%;
+    padding: 3rem;
+    padding-left: 0;
+    padding-right: 4rem;
+    margin-left: 0;
 }
