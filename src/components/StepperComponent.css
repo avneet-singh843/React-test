@@ -1,13 +1,17 @@
 .progress-bar-container {
     display: flex;
+    height: 10rem;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     font-size: 1rem;
+    margin-bottom: 0;
+    background-color: #fff;
 }
 
 .progress-bar-svg {
     margin-bottom: 10px;
+
 }
 
 .progress-bar-circle {

@@ -1,8 +1,5 @@
-import FooterComponent from "../components/FooterComponent";
 import HeaderComponent from "../components/HeaderComponent";
 import SideBarComponent from "../components/SideBarComponent";
-import StepperComponent from "../components/StepperComponent";
-import UploadFileComponent from "../components/UploadFileComponent";
 const DashboardPage = () => {
     return (
         <>

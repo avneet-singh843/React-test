@@ -1,4 +1,5 @@
 import "./StepperComponent.css"
+import { nextButton } from "./FooterComponent"
 import React, { useState } from 'react';
 
 const StepperComponent = () => {
@@ -17,13 +18,13 @@ const StepperComponent = () => {
                             className={`progress-bar-circle ${currentStep > index ? "blue" : "white"
                                 }`}
                             cx={(index + 1) * 100}
-                            cy="25"
-                            r="20"
+                            cy="20"
+                            r="13"
                         />
                         <text
                             className="progress-bar-text"
                             x={(index + 1) * 100}
-                            y="30"
+                            y="25"
                             textAnchor="middle"
                         >
                             {num}
