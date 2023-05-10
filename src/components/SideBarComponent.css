@@ -79,3 +79,65 @@
     padding: 1rem 0;
     color: #fff;
 }
+
+.creditScore .number {
+    font-size: 2.5rem;
+}
+
+.creditScore .text {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .sidebar {
+        width: 5rem;
+        transform: translateY(0);
+    }
+
+    .sidebarTitle {
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .titleBorder {
+        display: none;
+    }
+
+    .sidebarList .row {
+        height: 4rem;
+        font-size: 1rem;
+    }
+
+    .row #title {
+        display: none;
+    }
+
+    .sidebarList #active {
+        background-color: rgba(44, 169, 227, .25);
+        border-left: 4px solid #2CA9E3;
+        width: 4.8rem;
+    }
+
+    .sidebarList .row:hover {
+        background-color: rgba(44, 169, 227, .25);
+        border-left: 4.8px solid #2CA9E3;
+        width: 5rem;
+        transition: 0.3s;
+    }
+
+    .creditScore {
+        height: 3rem;
+        margin-left: 0.6rem;
+        margin-top: 10rem;
+        padding: 1rem 0;
+    }
+
+    .creditScore .number {
+        font-size: 1.7rem;
+    }
+
+    .creditScore .text {
+        font-size: 0.8rem;
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import schema from '../assets/schema.json'
 import './MapChannelsComponent.css'
 import PrimaryChannelButton from './PrimaryChannelButton';
+import AddChannelComponent from './AddChannelComponent';
 const MapChannelsComponent = () => {
     return (
         <div className='table'>
@@ -20,11 +21,12 @@ const MapChannelsComponent = () => {
                             <td>{channel}</td>
                             <td><PrimaryChannelButton /></td>
                             <td><PrimaryChannelButton /></td>
-                            <td className='link'>+ Add Backup Channel</td>
+                            <td className='link'><a href="#"> + Add Backup Channel</a></td>
                         </tr>
                     ))}
                 </tbody>
             </table>
+            <AddChannelComponent />
         </div>
     );
 }

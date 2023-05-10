@@ -8,7 +8,24 @@
     font-size: 1.5rem;
 }
 
-.navbar .user {
-    float: right;
+.navbar .User {
     font-size: 1.5rem;
+}
+
+.navbar .User .icon {
+    transform: translateY(5px);
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        height: 3rem;
+    }
+
+    .navbar .User span {
+        display: none;
+    }
+
+    .navbar .User .icon {
+        display: block;
+    }
 }

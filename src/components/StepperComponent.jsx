@@ -1,5 +1,4 @@
 import "./StepperComponent.css"
-import { nextButton } from "./FooterComponent"
 import React, { useState } from 'react';
 
 const StepperComponent = () => {

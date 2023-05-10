@@ -20,7 +20,7 @@ td {
 
 td {
     font-size: 1.2rem;
-    margin: 3rem;
+    margin-top: 3rem;
     height: 3rem;
     font-weight: bold;
 }
@@ -40,7 +40,7 @@ tr:nth-child(even) {
 tr {
     background-color: #fff;
     height: 3rem;
-    margin: 2rem;
+    margin-top: 2rem;
     padding: 2rem;
     border-top: 2rem solid #F5F6FA;
     align-items: center;
@@ -51,6 +51,37 @@ tr:hover {
     background-color: #fff;
 }
 
-.link {
+.link a {
+    text-decoration: none;
     color: #2F7EC7;
+    font-weight: 300;
+}
+
+.deleteButton span {
+    transform: translateY(2px);
+    position: absolute;
+}
+
+@media only screen and (max-width: 767px) {
+
+    th,
+    td {
+        width: auto;
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    td {
+        margin-top: 1rem;
+    }
+
+    th {
+        font-size: 1.2rem;
+    }
+
+    tr {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-top-width: 1rem;
+    }
 }

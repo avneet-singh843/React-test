@@ -10,7 +10,7 @@
 .content .mainContent {
     flex: 75%;
     padding: 3rem;
-    padding-left: 0;
+    padding-left: 3rem;
     padding-right: 4rem;
     margin-left: 0;
 }

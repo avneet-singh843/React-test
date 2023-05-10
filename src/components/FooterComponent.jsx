@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Component1 from "../components/UploadFileComponent";
-import Component2 from "../components/MapChannelsComponent";
 import "./FooterComponent.css"
 window.index = 1;
 

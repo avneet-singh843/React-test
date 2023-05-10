@@ -23,8 +23,8 @@ const SideBarComponent = () => {
                 })}
             </ul>
             <div className="creditScore">
-                <span style={{ fontSize: "2.5rem" }}>1650</span>
-                <span style={{ fontSize: "1.5rem" }}>Total credits available</span>
+                <span className="number">1650</span>
+                <span className="text">Total credits available</span>
             </div>
         </div>
     );
