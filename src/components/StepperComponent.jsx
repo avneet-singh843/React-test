@@ -1,12 +1,19 @@
+import React, { useState, forwardRef, useImperativeHandle } from 'react';
 import "./StepperComponent.css"
-import React, { useState } from 'react';
-
-const StepperComponent = () => {
+const StepperComponent = forwardRef(({ onNext }, ref) => {
     const [currentStep, setCurrentStep] = useState(0);
 
     const handleNext = () => {
-        setCurrentStep((prev) => prev + 1);
+        setCurrentStep(prev => prev + 1);
+
+        if (typeof onNext === 'function') {
+            onNext();
+        }
     };
+
+    useImperativeHandle(ref, () => ({
+        handleNext: handleNext
+    }));
 
     return (
         <div className="progress-bar-container">
@@ -14,8 +21,7 @@ const StepperComponent = () => {
                 {[1, 2, 3].map((num, index) => (
                     <g key={num}>
                         <circle
-                            className={`progress-bar-circle ${currentStep > index ? "blue" : "white"
-                                }`}
+                            className={`progress-bar-circle ${currentStep > index ? "blue" : "white"}`}
                             cx={(index + 1) * 100}
                             cy="20"
                             r="13"
@@ -36,6 +42,6 @@ const StepperComponent = () => {
             </button>
         </div>
     );
-};
+});
 
 export default StepperComponent;

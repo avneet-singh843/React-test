@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import "./pages.css";
 import "../components/FooterComponent.css"
 import HeaderComponent from "../components/HeaderComponent";
-import Component3 from "../components/SavePreviewComponent";
+import SavePreviewComponent from "../components/SavePreviewComponent";
 import SideBarComponent from "../components/SideBarComponent";
 import StepperComponent from "../components/StepperComponent";
-import Component1 from "../components/UploadFileComponent";
-import Component2 from "../components/MapChannelsComponent";
+import UploadFileComponent from "../components/UploadFileComponent";
+import MapChannelsComponent from "../components/MapChannelsComponent";
 
 const MontagesPage = () => {
     const [index, setIndex] = useState(1);
+    const stepperRef = useRef();
 
     const handleNextClick = () => {
+        if (stepperRef.current) {
+            stepperRef.current.handleNext();
+        }
         setIndex(prevIndex => prevIndex + 1);
     }
 
@@ -25,13 +29,13 @@ const MontagesPage = () => {
 
     const displayComponent = () => {
         if (index === 1) {
-            return <Component1 />;
+            return <UploadFileComponent />;
         }
         if (index === 2) {
-            return <Component2 />;
+            return <MapChannelsComponent />;
         }
-        if (index === 3) {
-            return <Component3 />;
+        if (index >= 3) {
+            return <SavePreviewComponent />;
         }
         return null;
     }
@@ -43,7 +47,7 @@ const MontagesPage = () => {
             </div>
             <div className="mainContent">
                 <HeaderComponent />
-                <StepperComponent />
+                <StepperComponent ref={stepperRef} />
                 {displayComponent()}
                 <div className="footer">
                     <div className="left">
@@ -51,7 +55,7 @@ const MontagesPage = () => {
                         <button className="cancel" onClick={handleCancelClick}>Cancel Montage</button>
                     </div>
                     <div className="right">
-                        <button disabled={index >= 3} className="nextComponent" onClick={handleNextClick}>Next</button>
+                        <button disabled={index > 3} className="nextComponent" onClick={handleNextClick}>Next</button>
                     </div>
                 </div>
             </div>

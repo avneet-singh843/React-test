@@ -16,11 +16,6 @@
     transition: background-color 0.3s;
 }
 
-.downicon {
-    transform: translateY(-5px);
-    color: #959595;
-    transition: transform 0.3s;
-}
 
 .dropdown-menu {
     position: absolute;

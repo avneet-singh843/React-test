@@ -1,11 +1,12 @@
 import React from 'react';
-import schema from '../assets/schema.json'
-import './MapChannelsComponent.css'
-import './SavePreviewComponent.css'
+import schema from '../assets/schema.json';
+import './MapChannelsComponent.css';
+import './SavePreviewComponent.css';
 import PrimaryChannelButton from './PrimaryChannelButton';
+
 const SavePreviewComponent = () => {
     return (
-        <div className='table'>
+        <div className="table">
             <table>
                 <thead>
                     <tr>
@@ -19,15 +20,25 @@ const SavePreviewComponent = () => {
                     {schema.channels.map((channel, index) => (
                         <tr key={index}>
                             <td>{channel}</td>
-                            <td><PrimaryChannelButton /></td>
-                            <td><PrimaryChannelButton /></td>
-                            <td><button className='edit'>Edit Channel</button></td>
+                            <td>
+                                <PrimaryChannelButton
+                                    selectedOption={localStorage.getItem(`selectedOption_${channel}`)}
+                                />
+                            </td>
+                            <td>
+                                <PrimaryChannelButton
+                                    selectedOption={localStorage.getItem(`selectedOption_${channel}-ref`)}
+                                />
+                            </td>
+                            <td>
+                                <button className="edit">Edit Channel</button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
             </table>
         </div>
     );
-}
+};
 
 export default SavePreviewComponent;

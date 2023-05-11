@@ -6,7 +6,7 @@ const UploadFileComponent = () => {
             <div className="dropBox">
                 <input type="file" className="uploadHide" id="uploadCustom" />
                 <label for="uploadCustom" className="uploadLabel">
-                    <UploadFileIcon className="icon" style={{ fontSize: "10rem", color: "#2F7EC7" }} />
+                    <UploadFileIcon className="icon" style={{ fontSize: "8rem", color: "#2F7EC7" }} />
                     <button className="chooseFiles">Browse Files</button>
                     <p className="dragText">or drop files here</p>
                 </label>
