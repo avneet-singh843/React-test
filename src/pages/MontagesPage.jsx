@@ -49,17 +49,19 @@ const MontagesPage = () => {
                 <HeaderComponent />
                 <StepperComponent ref={stepperRef} />
                 {displayComponent()}
-                {index !== 4 && (
-                    <div className="footer">
-                        <div className="left">
-                            <button disabled={index <= 1} className="back" onClick={handleBackClick}>Back</button>
-                            <button className="cancel" onClick={handleCancelClick}>Cancel Montage</button>
-                        </div>
+
+                <div className="footer">
+                    <div className="left">
+                        <button disabled={index <= 1} className="back" onClick={handleBackClick}>Back</button>
+                        <button className="cancel" onClick={handleCancelClick}>Cancel Montage</button>
+                    </div>
+                    {index !== 4 && (
                         <div className="right">
                             <button disabled={index >= 4} className="nextComponent" onClick={handleNextClick}>Next</button>
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
+
             </div>
         </div>
     );
